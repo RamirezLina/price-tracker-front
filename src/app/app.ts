@@ -9,5 +9,5 @@ import { AppShell } from "./core/layouts/app-shell/app-shell";
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('price-tracker-front');
+  protected readonly title = signal('GlowPrice | Comparador de precios dermocosméticos');
 }
