@@ -1,20 +1,21 @@
 import { Routes } from '@angular/router';
 import { ScrapProductPage } from './features/product-management/pages/scrap-product-page/scrap-product-page';
 import { ProductsLayout } from './features/products-price/components/products-layout/products-layout';
+import { APP_ROUTE_PATHS } from './core/routing/app-routes';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: APP_ROUTE_PATHS.home,
     component: ProductsLayout,
     title: 'Rastreador de precios'
   },
   {
-    path: 'u/products-tracker',
+    path: APP_ROUTE_PATHS.productsTracker,
     component: ProductsLayout,
     title: 'Rastreador de precios'
   },
   {
-    path: 'u/product-management',
+    path: APP_ROUTE_PATHS.productManagement,
     component: ScrapProductPage,
     title: 'Gestión de productos'
   }

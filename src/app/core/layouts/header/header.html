@@ -1,6 +1,6 @@
 <header>
   <img src="/image/logo-favicon.svg" alt="Logo de GlowPrice" class="app-shell__logo" />
-  <a routerLink="/" class="app-shell__brand" aria-label="Ir al inicio">
+  <a [routerLink]="links.home" class="app-shell__brand" aria-label="Ir al inicio">
     {{ projectName() }}
   </a>
   <nav aria-label="Categorías principales">
