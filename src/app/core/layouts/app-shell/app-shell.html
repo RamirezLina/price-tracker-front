@@ -3,7 +3,7 @@
 <div class="app-shell">
   <app-sidebar></app-sidebar>
   <main class="app-shell__content">
-    <p>app-shell works: {{ projectName() }}!</p>
+    <router-outlet />
   </main>
 </div>
-<app-footer [projectName]="projectName()">
+<app-footer [projectName]="projectName()"></app-footer>
