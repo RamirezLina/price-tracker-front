@@ -1,10 +1,10 @@
 import { Component, input } from '@angular/core';
-import { SegmentedControlOption } from './segmented-control-option';
+import { SegmentedControlOption } from './segmented-control.model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 
 @Component({
-  selector: 'app-segmented-control',
+  selector: 'ui-segmented-control',
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './segmented-control.html',
   styleUrl: './segmented-control.css',
