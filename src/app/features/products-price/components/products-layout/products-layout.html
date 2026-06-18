@@ -4,15 +4,10 @@
     <p>Consulta precios actuales e históricos de tus productos guardados</p>
   </div>
 
-  <ui-segmented-control [options]="viewOptions">
-
-  </ui-segmented-control>
+  <ui-tab-nav [options]="viewOptions">
+  </ui-tab-nav>
 </header>
 
-<section class="products-filters">
-  <!-- filtros -->
-</section>
-
-<section class="products-content">
+<section class="page-content">
   <router-outlet />
 </section>
