@@ -1,11 +1,9 @@
 const USER_PREFIX = 'u';
-const PRODUCTS_TRACKER_PREFIX = 'products-tracker';
-const PRODUCTS_MANAGEMENT_PREFIX = 'product-management';
 
 export const APP_ROUTE_PATHS = {
   home: '',
-  productsTracker: `${USER_PREFIX}/${PRODUCTS_TRACKER_PREFIX}`,
-  productManagement: `${USER_PREFIX}/${PRODUCTS_MANAGEMENT_PREFIX}`,
+  productsTracker: `${USER_PREFIX}/products-tracker`,
+  productManagement: `${USER_PREFIX}/product-management`,
   productsTrackerToday: `today`,
   productsTrackerHistory: `history`,
 } as const;

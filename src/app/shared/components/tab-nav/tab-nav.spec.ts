@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SegmentedControl } from './segmented-control';
+import { SegmentedControl } from './tab-nav';
 
 describe('SegmentedControl', () => {
   let component: SegmentedControl;
