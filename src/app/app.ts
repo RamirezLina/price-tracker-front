@@ -4,7 +4,7 @@ import { AppShell } from "./core/layouts/app-shell/app-shell";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AppShell],
+  imports: [AppShell],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
