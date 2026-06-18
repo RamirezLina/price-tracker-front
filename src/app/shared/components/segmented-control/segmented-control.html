@@ -1,5 +1,10 @@
-<div>
-  <button type="submit">hola
-
-  </button>
-</div>
+<nav class="inline-flex items-center gap-1 rounded-xl border border-purple-200 bg-purple-50 p-1"
+  aria-label="Navegación segmentada">
+  @for (option of options(); track option.route) {
+  <a [routerLink]="option.route" routerLinkActive="bg-white text-purple-600 shadow-sm"
+    [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page"
+    class="rounded-lg px-5 py-2 text-sm font-medium text-zinc-700 transition">
+    {{ option.label }}
+  </a>
+  }
+</nav>

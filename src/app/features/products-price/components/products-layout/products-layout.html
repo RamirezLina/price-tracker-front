@@ -4,7 +4,8 @@
     <p>Consulta precios actuales e históricos de tus productos guardados</p>
   </div>
 
-  <app-segmented-control>
+  <app-segmented-control [options]="viewOptions">
+
   </app-segmented-control>
 </header>
 
@@ -13,5 +14,5 @@
 </section>
 
 <section class="products-content">
-  <!-- tabla o gráfico -->
+  <router-outlet />
 </section>
