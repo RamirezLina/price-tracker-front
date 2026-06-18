@@ -1,0 +1,12 @@
+<div class="inline-flex items-center gap-1 rounded-xl border border-purple-200 bg-purple-50 p-1 shadow-sm">
+  @for (option of representationOptions; track option.value) {
+  <button type="button" class="cursor-pointer rounded-lg px-5 py-2 text-sm font-semibold transition-all duration-200"
+    [class.bg-purple-600]="selectedView() === option.value" [class.text-white]="selectedView() === option.value"
+    [class.shadow-sm]="selectedView() === option.value" [class.text-slate-700]="selectedView() !== option.value"
+    [class.hover:bg-purple-100]="selectedView() !== option.value"
+    [class.hover:text-purple-700]="selectedView() !== option.value"
+    [attr.aria-pressed]="selectedView() === option.value" (click)="selectedView.set(option.value)">
+    {{ option.label }}
+  </button>
+  }
+</div>
