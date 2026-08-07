@@ -4,10 +4,10 @@ import { AppShell } from "./core/layouts/app-shell/app-shell";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AppShell],
+  imports: [AppShell],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('price-tracker-front');
+  protected readonly title = signal('GlowPrice | Comparador de precios dermocosméticos');
 }

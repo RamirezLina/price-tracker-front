@@ -1,0 +1,10 @@
+<nav class="inline-flex items-center py-2,5 gap-1 rounded-xl border border-purple-200 bg-purple-50 p-1"
+  aria-label="Navegación segmentada">
+  @for (option of options(); track option.route) {
+  <a [routerLink]="option.route" routerLinkActive="bg-white text-fuchsia-600 shadow-sm"
+    [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page"
+    class="rounded-lg px-6 py-2 text-sm font-medium oklch(55.8% 0.288 302.321) transition">
+    {{ option.label }}
+  </a>
+  }
+</nav>
